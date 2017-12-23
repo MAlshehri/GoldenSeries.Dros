@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using UIKit;
 
 using GoldenSeries.Dros.ViewModels;
-using GoldenSeries.Dros.Data.Models;
+using GoldenSeries.Dros.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;

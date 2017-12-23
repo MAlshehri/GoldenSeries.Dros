@@ -41,9 +41,12 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
-    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <CodesignProvision>VS: im.alshehriGoldenSeries.Dros Development</CodesignProvision>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchI18n>mideast</MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -73,14 +76,17 @@
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchProfiling>true</MtouchProfiling>
-    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchFloat32>false</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <IOSDebuggerPort>33656</IOSDebuggerPort>
-    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchLink>None</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <CodesignProvision>VS: im.alshehriGoldenSeries.Dros Development</CodesignProvision>
+    <MtouchI18n>mideast</MtouchI18n>
+    <MtouchExtraArgs></MtouchExtraArgs>
+    <MtouchSdkVersion>11.2</MtouchSdkVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -101,6 +107,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite">
       <Version>2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>4.4.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

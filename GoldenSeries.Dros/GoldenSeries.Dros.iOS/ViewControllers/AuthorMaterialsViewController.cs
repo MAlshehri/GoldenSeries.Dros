@@ -1,7 +1,7 @@
 using Foundation;
 using System;
 using UIKit;
-using GoldenSeries.Dros.Data.Models;
+using GoldenSeries.Dros.Models;
 using System.Collections.Generic;
 using GoldenSeries.Dros.ViewModels;
 using System.Collections.Specialized;
