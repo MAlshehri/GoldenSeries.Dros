@@ -15,12 +15,34 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MockDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OldBaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AudioType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Author.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ContentVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ITrackable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Link.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Material.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MaterialAuthor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MaterialCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MaterialTag.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Tag.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AuthorMaterialsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AuthorsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DataStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DrosDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)dros.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <LogicalName>GoldenSeries.Dros.dros.db</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

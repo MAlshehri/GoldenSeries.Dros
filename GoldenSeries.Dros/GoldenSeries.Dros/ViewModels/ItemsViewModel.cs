@@ -8,7 +8,7 @@ using GoldenSeries.Dros.Models;
 
 namespace GoldenSeries.Dros.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class ItemsViewModel : OldBaseViewModel
     {
         public ObservableCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }

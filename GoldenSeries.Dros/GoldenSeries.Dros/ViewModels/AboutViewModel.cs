@@ -4,7 +4,7 @@ using GoldenSeries.Dros.Helpers;
 
 namespace GoldenSeries.Dros.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class AboutViewModel : OldBaseViewModel
     {
         public AboutViewModel()
         {

@@ -7,8 +7,8 @@ namespace GoldenSeries.Dros.iOS
     {
         public TabBarController(IntPtr handle) : base(handle)
         {
-            TabBar.Items[0].Title = "Browse";
-            TabBar.Items[1].Title = "About";
+            TabBar.Items[0].Title = "الاسماء";
+            //TabBar.Items[1].Title = "About";
         }
     }
 }

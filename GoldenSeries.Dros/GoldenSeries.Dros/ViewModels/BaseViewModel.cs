@@ -11,8 +11,7 @@ namespace GoldenSeries.Dros.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => ServiceLocator.Instance.Get<IDataStore<Item>>() ?? new MockDataStore();
-
+        public readonly DataStore dataStore = new DataStore();
         bool isBusy = false;
         public bool IsBusy
         {
