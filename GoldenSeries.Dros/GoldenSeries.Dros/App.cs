@@ -13,11 +13,11 @@ namespace GoldenSeries.Dros
             get
             {
                 //#if __ANDROID__
-                //string libraryPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); ;
+                string libraryPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
                 //#else
 
-                string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
-                string libraryPath = Path.Combine(documentsPath, "..", "Library");
+                //string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
+                //string libraryPath = Path.Combine(documentsPath, "..", "Library");
                 //#endif
 
                 var path = Path.Combine(libraryPath, "dros.db");
